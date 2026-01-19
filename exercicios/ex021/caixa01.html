@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        h1{ /*box-level*/
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            
+            /* border-width: 10px; Tamanho da espessura da borda
+            border-style: solid;
+            border-color: darkslategray; */
+
+            border: 10px solid red;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px 20px; /*Só coloca uma vez se todas forem iguais*/
+            
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+            
+            margin: 20px auto 40px auto; /*Centraliza a margem da direita e esquerda*/
+
+
+           /* margin: auto; Centraliza horizontalmente*/
+
+           /* outline-width: 5px;
+           outline-style: dashed;
+           outline-color: salmon; */
+
+           outline: 5px dashed salmon;
+        }
+
+        a{ /*inline-level*/
+            border-width: 10px;
+            border-style: solid; /* border-style: dashed; fica pontilhado*/
+            border-color: red;
+            
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+                border-style: dashed; fica pontilhado
+                border-style: dotted; pontilhado
+                border-style: double; linha dupla
+                border-style: groove; as cores ficam tridimensionais
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inlibe-level</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>
+
+<!--Capítulo 16 Vídeo 24 e 25-->
+
+<!-- padding: 10px; quando coloca-se dois valores o de cima e o de baixo ficam iguais, e da esquerda e da direita também ficam iguais-->

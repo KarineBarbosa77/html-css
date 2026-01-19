@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*Tira o sublinhado*/
+            font-weight: bold; /*Para ficar em negrito*/
+        }
+
+        a:visited{ /*Se for visitado*/
+            color: darkred;
+        }
+
+        a:hover{
+            color: black; /*Ao passar o mouse a fonte muda de cor */
+            text-decoration: underline; /*Ao passar o mouse aparece o sublinhado*/
+        }
+
+        a:active{
+            color: yellow; /*Ao aptertar e segurar aparece o amarelo*/
+        }
+
+        .especial{
+            background-color: rgb(255, 140, 140);
+        }
+
+        .especial::before{
+            content: '⇒ ';
+        }
+
+        .especial::after{
+            content: ' ⇐'; /*content significa conteudo*/
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
+
+<!--pseudo-classes são palavras que define estados de elementos dentro do HTML
+    pseudo-classe é com :
+    pseudo-elemento é com :: 
+    visited
+    hover
+    active
+-->
+
+<!--
+    a::before{
+        content: '⇒ ';
+    }
+    a::after{
+        content: ' ⇐';      
+    }
+
+        Seta para todos os links
+-->
+
+<!--target="_black" abre uma outra guia-->
+
+<!--Capítulo 15 video 22-->
